@@ -47,11 +47,11 @@ function App() {
     }
   ]
 
-  const stats = [
-    { value: '100+', label: 'Colaboradores' },
-    { value: '15', label: 'Proyectos activos' },
-    { value: '5M+', label: 'Lineas de codigo' },
-    { value: '32', label: 'Ciudades' }
+  const values = [
+    { icon: Code2, label: 'Codigo 100% abierto' },
+    { icon: Globe, label: 'Acceso libre y gratuito' },
+    { icon: Database, label: 'Aprende haciendo' },
+    { icon: Bot, label: 'IA para todos' }
   ]
 
   return (
@@ -106,9 +106,8 @@ function App() {
             </h1>
 
             <p className="text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed">
-              Somos una comunidad de desarrolladores, investigadores y entusiastas
-              construyendo soluciones de IA abiertas y accesibles para el desarrollo
-              del pais.
+              Un espacio abierto para aprender, experimentar y compartir conocimiento
+              sobre inteligencia artificial. Todo el codigo es libre y gratuito.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -131,12 +130,12 @@ function App() {
             </div>
           </div>
 
-          {/* Stats */}
+          {/* Values */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 pt-10 border-t border-gray-800/50">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-white mb-1">{stat.value}</div>
-                <div className="text-sm text-gray-500">{stat.label}</div>
+            {values.map((item, index) => (
+              <div key={index} className="flex flex-col items-center text-center gap-2">
+                <item.icon className="w-6 h-6 text-colombia-yellow" />
+                <div className="text-sm text-gray-400">{item.label}</div>
               </div>
             ))}
           </div>
@@ -152,15 +151,14 @@ function App() {
                 Nuestra Mision
               </h2>
               <p className="text-lg text-gray-400 mb-6 leading-relaxed">
-                Democratizar el acceso a la inteligencia artificial en Colombia,
-                promoviendo el desarrollo de tecnologias abiertas que fortalezcan
-                la soberania digital del pais.
+                Facilitar el aprendizaje de inteligencia artificial a traves de
+                proyectos practicos, codigo abierto y recursos gratuitos para
+                cualquier persona interesada.
               </p>
               <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-                Creemos que la IA debe ser una herramienta al servicio de todos los
-                colombianos, no un privilegio de pocos. Por eso construimos infraestructura
-                abierta, capacitamos talento local y desarrollamos soluciones que
-                responden a las necesidades reales de nuestra sociedad.
+                Este es un espacio para experimentar, aprender y compartir. No hay
+                costos, no hay barreras. Solo curiosidad y ganas de construir cosas
+                interesantes con IA.
               </p>
 
               <div className="space-y-4">
@@ -293,11 +291,11 @@ await colombia.transform();`}
             <div className="relative max-w-2xl">
               <Bot className="w-12 h-12 text-colombia-yellow mb-6" />
               <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-                Unete a la comunidad
+                Aprende con nosotros
               </h2>
               <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-                Somos mas de 100 colaboradores activos trabajando en proyectos de
-                codigo abierto. Tu conocimiento y experiencia pueden hacer la diferencia.
+                Explora los repositorios, clona el codigo, experimenta y aprende.
+                Si quieres contribuir o tienes ideas, las puertas estan abiertas.
               </p>
 
               <div className="flex flex-wrap gap-4">
