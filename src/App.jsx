@@ -13,7 +13,8 @@ import {
   Bot,
   ExternalLink,
   Terminal,
-  Cpu
+  Cpu,
+  Send
 } from 'lucide-react'
 
 function App() {
@@ -309,6 +310,15 @@ await colombia.transform();`}
                   GitHub
                 </a>
                 <a
+                  href="https://t.me/colombia_ia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0088cc] text-white font-semibold rounded-lg hover:bg-[#0077b5] transition-colors"
+                >
+                  <Send className="w-5 h-5" />
+                  Telegram
+                </a>
+                <a
                   href="#"
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors border border-white/10"
                 >
@@ -360,18 +370,20 @@ await colombia.transform();`}
               <ul className="space-y-2 text-sm text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">Terminos</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Privacidad</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Licencia MIT</a></li>
               </ul>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-gray-800/50 gap-4">
             <p className="text-sm text-gray-500">
-              &copy; {new Date().getFullYear()} Colombia-IA. Codigo abierto bajo licencia MIT.
+              &copy; {new Date().getFullYear()} Colombia-IA. Codigo abierto para todos.
             </p>
             <div className="flex items-center gap-4">
               <a href="https://github.com/orgs/Colombia-IA/repositories" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Github className="w-5 h-5" />
+              </a>
+              <a href="https://t.me/colombia_ia" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Send className="w-5 h-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="w-5 h-5" />
