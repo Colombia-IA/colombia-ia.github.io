@@ -90,7 +90,22 @@ Pagina dedicada a listar herramientas de IA gratuitas y open source.
 ```
 
 ### Agregar nuevas herramientas
-Editar `src/data/aiTools.json` y agregar un nuevo objeto al array `tools`.
+
+1. Editar `src/data/aiTools.json`
+2. Agregar un nuevo objeto al array `tools` (copiar estructura de arriba)
+3. Ejecutar:
+   ```bash
+   git add src/data/aiTools.json
+   git commit -m "feat: add new AI tools"
+   git push
+   ```
+4. GitHub Actions despliega automaticamente
+
+**Categorias validas:** LLM, Imagen, Audio, Codigo, Busqueda, Productividad, Desarrollo, Plataforma
+
+**Pricing valido:** open-source, free, freemium
+
+**Nota:** El enfoque del directorio es ser CURADOR (las mejores herramientas) no RECOPILADOR (todas las herramientas). Calidad sobre cantidad.
 
 ## Scripts Disponibles
 
