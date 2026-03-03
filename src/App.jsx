@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {
   Server,
   Shield,
@@ -14,7 +15,8 @@ import {
   ExternalLink,
   Terminal,
   Cpu,
-  Send
+  Send,
+  Sparkles
 } from 'lucide-react'
 import ParticleBackground from './components/ParticleBackground'
 
@@ -70,6 +72,10 @@ function App() {
               <span className="text-xl font-bold tracking-tight">Colombia-IA</span>
             </div>
             <div className="hidden md:flex items-center gap-8">
+              <Link to="/directorio" className="flex items-center gap-1.5 text-sm text-colombia-yellow hover:text-colombia-yellow/80 transition-colors font-medium">
+                <Sparkles className="w-4 h-4" />
+                Directorio IA
+              </Link>
               <a href="#mision" className="text-sm text-gray-400 hover:text-white transition-colors">Mision</a>
               <a href="#proyectos" className="text-sm text-gray-400 hover:text-white transition-colors">Proyectos</a>
               <a href="#comunidad" className="text-sm text-gray-400 hover:text-white transition-colors">Comunidad</a>
@@ -281,6 +287,51 @@ await colombia.transform();`}
               Ver todos los repositorios
               <Github className="w-4 h-4" />
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Directory CTA Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-colombia-yellow/20 via-colombia-blue/10 to-colombia-red/10 border border-colombia-yellow/30 p-8 sm:p-12">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-colombia-yellow/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-colombia-blue/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+
+            <div className="relative flex flex-col lg:flex-row items-center gap-8">
+              <div className="flex-1 text-center lg:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-colombia-yellow/20 text-colombia-yellow text-sm mb-4">
+                  <Sparkles className="w-4 h-4" />
+                  <span>Nuevo</span>
+                </div>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                  Directorio de Herramientas IA
+                </h2>
+                <p className="text-lg text-gray-300 mb-6 max-w-xl">
+                  Descubre las mejores herramientas de inteligencia artificial gratuitas y de codigo abierto.
+                  Filtradas, organizadas y listas para usar.
+                </p>
+                <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                  <Link
+                    to="/directorio"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-colombia-yellow text-black font-semibold rounded-lg hover:bg-colombia-yellow/90 transition-colors"
+                  >
+                    <Sparkles className="w-5 h-5" />
+                    Explorar directorio
+                  </Link>
+                </div>
+              </div>
+              <div className="flex-shrink-0 grid grid-cols-3 gap-3">
+                {['LLM', 'Imagen', 'Audio', 'Codigo', 'Busqueda', 'Open Source'].map((tag, i) => (
+                  <div
+                    key={i}
+                    className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-sm text-center text-gray-200 border border-white/10"
+                  >
+                    {tag}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
