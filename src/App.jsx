@@ -16,6 +16,7 @@ import {
   Cpu,
   Send
 } from 'lucide-react'
+import ParticleBackground from './components/ParticleBackground'
 
 function App() {
   const projects = [
@@ -56,9 +57,10 @@ function App() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-gray-100">
+    <div className="min-h-screen bg-[#0a1628] text-gray-100">
+      <ParticleBackground />
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-xl border-b border-gray-800/50">
+      <nav className="fixed top-0 w-full z-50 bg-[#0a1628]/80 backdrop-blur-xl border-b border-gray-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
