@@ -1,0 +1,8 @@
+# Robots.txt para Colombia-IA
+# https://colombia-ia.github.io
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://colombia-ia.github.io/sitemap.xml
