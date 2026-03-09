@@ -7,7 +7,7 @@ Landing page de la comunidad Colombia-IA, un espacio abierto para aprender, expe
 ## Stack Tecnologico
 
 - **Framework**: React 18 con Vite 6
-- **Routing**: React Router DOM (HashRouter para GitHub Pages)
+- **Routing**: React Router DOM (BrowserRouter con 404.html para GitHub Pages)
 - **Estilos**: Tailwind CSS 3.4
 - **Iconos**: lucide-react
 - **Lenguaje**: JavaScript (JSX)
@@ -27,7 +27,10 @@ colombia-ia/
 │   ├── main.jsx                    # Entry point con rutas
 │   └── index.css                   # Estilos globales y Tailwind
 ├── public/
-│   └── favicon.svg                 # Favicon del sitio
+│   ├── favicon.svg                 # Favicon del sitio
+│   ├── og-image.svg                # Imagen para Open Graph (redes sociales)
+│   ├── robots.txt                  # Instrucciones para crawlers
+│   └── sitemap.xml                 # Mapa del sitio para SEO
 ├── index.html                      # HTML base
 ├── package.json                    # Dependencias y scripts
 ├── vite.config.js                  # Configuracion de Vite
@@ -37,12 +40,12 @@ colombia-ia/
 
 ## Rutas
 
-El proyecto usa HashRouter para compatibilidad con GitHub Pages:
+El proyecto usa BrowserRouter con un 404.html fallback para GitHub Pages (URLs limpias, sin #):
 
 | Ruta | Componente | URL en produccion |
 |------|------------|-------------------|
 | `/` | App.jsx | https://colombia-ia.github.io/ |
-| `/directorio` | Directory.jsx | https://colombia-ia.github.io/#/directorio |
+| `/directorio` | Directory.jsx | https://colombia-ia.github.io/directorio |
 
 ## Colores de la Bandera de Colombia
 
@@ -121,6 +124,35 @@ El sitio se despliega en GitHub Pages mediante GitHub Actions (`.github/workflow
 
 - **GitHub**: https://github.com/orgs/Colombia-IA/repositories
 - **Telegram**: https://t.me/colombia_ia
+
+## SEO y Google Search Console
+
+### Configuracion SEO implementada (Marzo 2025)
+
+- **BrowserRouter**: URLs limpias sin # para que Google pueda indexar
+- **404.html**: Generado automaticamente en build para SPA en GitHub Pages
+- **sitemap.xml**: Mapa del sitio en `public/sitemap.xml`
+- **robots.txt**: Instrucciones para crawlers en `public/robots.txt`
+- **Open Graph**: Meta tags para previews en redes sociales (og:image, og:title, etc.)
+- **Canonical URL**: Evita contenido duplicado
+
+### Google Search Console
+
+**URL**: https://search.google.com/search-console (propiedad: colombia-ia.github.io)
+
+**Sitemap enviado**: https://colombia-ia.github.io/sitemap.xml
+
+**TODO - Revisar periodicamente:**
+- [ ] Verificar que el sitemap fue procesado correctamente
+- [ ] Revisar errores de cobertura/indexacion
+- [ ] Monitorear palabras clave que generan trafico
+
+### Mejoras SEO pendientes (opcional)
+
+- Crear paginas individuales por herramienta (`/herramienta/[slug]`) para SEO long-tail
+- Agregar Schema.org JSON-LD (SoftwareApplication) para rich results
+- Convertir og-image.svg a PNG para mejor compatibilidad con Twitter
+- Crear blog/contenido editorial para trafico organico sostenido
 
 ## Notas para Desarrollo
 
