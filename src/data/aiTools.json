@@ -419,6 +419,54 @@
       "github": "https://github.com/firecrawl/firecrawl",
       "tags": ["scraping", "datos", "api"],
       "featured": false
+    },
+    {
+      "id": "36",
+      "name": "DeepSite",
+      "description": "Genera sitios web completos con IA desde el navegador. Vibe coding con DeepSeek V3.",
+      "category": "Desarrollo",
+      "pricing": "free",
+      "spanish": false,
+      "url": "https://huggingface.co/spaces/enzostvs/deepsite",
+      "github": null,
+      "tags": ["vibe-coding", "web", "prototipado"],
+      "featured": true
+    },
+    {
+      "id": "37",
+      "name": "OpenClaw",
+      "description": "Asistente personal de IA local y privado. Conecta por WhatsApp, Telegram, Discord y mas.",
+      "category": "LLM",
+      "pricing": "open-source",
+      "spanish": true,
+      "url": "https://openclaw.ai/",
+      "github": "https://github.com/openclaw/openclaw",
+      "tags": ["local", "privacidad", "asistente"],
+      "featured": true
+    },
+    {
+      "id": "38",
+      "name": "Genspark",
+      "description": "Agente de IA todo-en-uno. Investigacion autonoma, presentaciones, reportes y mas.",
+      "category": "Productividad",
+      "pricing": "freemium",
+      "spanish": true,
+      "url": "https://www.genspark.ai/",
+      "github": null,
+      "tags": ["agente", "investigacion", "presentaciones"],
+      "featured": true
+    },
+    {
+      "id": "39",
+      "name": "AlphaXiv",
+      "description": "Deep Research para papers cientificos. Busca y analiza literatura de arXiv con IA.",
+      "category": "Busqueda",
+      "pricing": "freemium",
+      "spanish": false,
+      "url": "https://www.alphaxiv.org/",
+      "github": null,
+      "tags": ["papers", "investigacion", "academia"],
+      "featured": false
     }
   ],
   "categories": [
