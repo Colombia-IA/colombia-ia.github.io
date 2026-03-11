@@ -467,6 +467,42 @@
       "github": null,
       "tags": ["papers", "investigacion", "academia"],
       "featured": false
+    },
+    {
+      "id": "40",
+      "name": "Microsoft BitNet",
+      "description": "Framework para ejecutar LLMs de 100B parametros en CPU sin GPU. Modelos de 1-bit ultraeficientes.",
+      "category": "LLM",
+      "pricing": "open-source",
+      "spanish": false,
+      "url": "https://github.com/microsoft/BitNet",
+      "github": "https://github.com/microsoft/BitNet",
+      "tags": ["local", "cpu", "eficiencia"],
+      "featured": true
+    },
+    {
+      "id": "41",
+      "name": "Unsloth AI",
+      "description": "Fine-tuning de LLMs 2x mas rapido con 70% menos VRAM. Incluye 250+ notebooks listos para usar.",
+      "category": "Desarrollo",
+      "pricing": "open-source",
+      "spanish": false,
+      "url": "https://unsloth.ai/",
+      "github": "https://github.com/unslothai/unsloth",
+      "tags": ["fine-tuning", "entrenamiento", "notebooks"],
+      "featured": true
+    },
+    {
+      "id": "42",
+      "name": "Gemini CLI",
+      "description": "Agente de IA de Google en tu terminal. Open source con tier gratuito de 1000 requests/dia.",
+      "category": "Codigo",
+      "pricing": "free",
+      "spanish": false,
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "github": "https://github.com/google-gemini/gemini-cli",
+      "tags": ["terminal", "agente", "google"],
+      "featured": true
     }
   ],
   "categories": [
